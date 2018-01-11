@@ -1,0 +1,66 @@
+$dark-blue: grey !default;
+
+.nav_w{
+    background-color: $dark-blue;
+}
+
+.nav{
+	width: 1200px;
+	margin: 0 auto;
+
+	ul li
+	{
+		width: 108px;
+		float: left;
+		margin-right: 1px;
+		position: relative;
+		ul{
+			width: 150px;
+		    position: absolute;
+		    top: 100%;
+		    left: 0;
+		    z-index: 99;
+		    background-color: $light-blue;
+		    display: none;
+		    overflow: hidden;
+		    li {
+		    	width: 150px;
+			    height: 40px;
+			    line-height: 40px;
+			    margin-top: -1px;
+			    border-top: 1px solid $dark-blue;
+				a{
+			    	display: block;
+				    color: #fff;
+				    font-size: 14px;
+				    padding-left: 22px;
+				    white-space: nowrap;
+				    text-overflow: ellipsis;
+				    overflow: hidden;
+				    transition: 0.5s;
+				    -webkit-transition: 0.5s;
+			    	&:hover{
+			    		background-color:$dark-blue;
+			    	}
+		    	}
+		    }
+		}
+		a.navName{
+	    height: 45px;
+	    line-height: 45px;
+	    font-size: 16px;
+	    display: block;
+	    text-align: center;
+	    font-weight: 600;
+	    color: #ffffff;
+		}
+		&.current a.navName, a.navName:hover{
+			background-color: $light-blue;
+		}
+	}
+
+}
+
+.navTwo ul li{
+	width: 119px;
+}

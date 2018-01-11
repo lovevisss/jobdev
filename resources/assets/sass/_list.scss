@@ -1,0 +1,151 @@
+.small_list{
+    @include white_round_block(5, 0.8);
+	padding: 0 20px;
+	margin: 0 45px;
+}
+
+.list_witch_pic{
+    @include white_round_block(5, 0.8, 400px);
+    margin-right: 50px;
+}
+
+.rolling_list{
+	@include white_round_block(5, 0.8, 400px);
+	float: right;
+	padding: 0 0;
+}
+
+.contact_list{
+	@include white_round_block(5, 0.8, 400px);
+	float: right;
+	margin-top: 90px;
+	.contactInfo{
+		padding: 15px;
+		// width: 300px;
+	}
+}
+.list_from_other_web{
+	@include white_round_block(5, 0.8, 400px);
+	margin-top: 40px;
+}
+
+.in_noticeTitle{
+	height: 55px;
+    line-height: 55px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0;
+    background: $dark-blue 0 0 repeat;
+}
+
+.in_noticeList{
+	@extend .in_newsList;
+	height: 290px;
+    padding: 0 15px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+.in_noticeMore{
+    padding: 8px 0;
+    margin-top: -1px;
+    text-align: center;
+    border-top: 1px solid #e1e1e1;
+    a{
+    	display: inline-block;
+	    width: 80px;
+	    height: 24px;
+	    line-height: 24px;
+	    border-radius: 2px;
+	    font-size: 14px;
+	    color: #fff;
+	    background-color: $dark-blue;
+    }
+}
+
+.in_title{
+	border-bottom: 3px solid #ebebeb;
+	position: relative;
+}
+
+.in_titleName{
+	padding: 10px 0;
+	display: inline-block;
+	font-size: 20px;
+	color: #282828;
+}
+
+.in_titleLine{
+	height: 3px;
+    width: 50%;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background-color: $dark-blue;
+}
+
+.in_titleMore{
+	float: right;
+    font-size: 14px;
+    color: $dark-blue;
+    margin-top: 20px;
+    padding-right: 20px;
+    position: relative;
+	i{
+		@include transitions(0.3s);
+	}
+    &:hover i{
+	    @include rotates(90deg);
+    }
+}
+
+.in_itemImg{
+	width: 378px;
+    height: 134px;
+    margin-top: 20px;
+    overflow: hidden;
+    a{
+    	&:hover img{
+    		@include transitions(0.5s);
+    		transform: scale(1.04,1.04);
+    	}
+    }
+}
+
+.in_newsList{
+	margin-top: 10px;
+	ul{
+		overflow: hidden;
+		li{
+			height: 36px;
+		    line-height: 36px;
+		    margin-top: -1px;
+		    border-top: 1px dashed #f1f1f1;
+		    display: block;
+		    a{
+		    	font-size: 14px;
+	 			display: block;
+	   		 	position: relative;
+	   		 	i{
+	   		 		font-size: 12px;
+
+	   		 	}
+				
+	   		 	&:hover strong{
+	   		 		transform: translateX(8px);
+	   		 	}
+		    }
+
+		    strong{
+		    	display: inline-block;
+				font-weight: normal;
+    			@include transitions(0.5s);
+		    }
+
+		    span{
+		    	float: right;
+		    }
+		}
+	}
+}

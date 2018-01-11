@@ -1,0 +1,117 @@
+ul, ol, li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+	color:#f60b0b;
+}
+.header_w{
+    height: 145px;
+    background: #0678be;
+}
+
+.header{
+    width: 1200px;
+    height: 145px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: url(../images/headerJob.png) 780px 50% no-repeat;
+}
+
+.header_logo{
+	margin-top:33px;
+}
+
+.header_contact{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: #fff;
+}
+
+.header_contact a {
+    color: #fff;
+}
+
+.nav_w{
+    background-color: #0568A4;
+}
+
+.nav{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.clearfix{
+	zoom: 1;
+}
+
+
+
+.navTwo ul li{
+	width: 119px;
+}
+
+.nav ul li{
+	width: 108px;
+	float: left;
+	margin-right: 1px;
+	position: relative;
+}
+
+.nav ul li.current a.navName, .nav ul li a.navName:hover{
+	background-color: #0680CB;
+}
+
+.nav ul li a.navName {
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.nav ul li ul{
+    width: 150px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+    background-color: #0680CB;
+    display: none;
+    overflow: hidden;
+}
+
+.nav ul li ul li{
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: -1px;
+	border-top: 1px solid #0568A4;
+}
+
+.nav ul li ul li a{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 22px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.nav ul li ul li a:hover {
+    background-color: #0568A4;
+}

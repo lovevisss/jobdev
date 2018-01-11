@@ -1,0 +1,45 @@
+.footer_w{
+	height: 200px;
+	background: #666;
+}
+
+.footer{
+	width: $container-width;
+	margin: 0 auto;
+}
+
+.footerLogo{
+	width: 280px;
+	float: left;
+	margin: 68px 175px 0 0;
+}
+
+
+.footerInfo{
+	float: left;
+	margin-top: 25px;
+	color:#fff;
+}
+
+.footerInfo_copy{
+	font-weight: bold;
+	font-size: 14px;
+
+}
+
+.footerInfo_con{
+	line-height: 20px;
+	margin-top: 15px;
+}
+
+.footerEwm{
+	float: right;
+    margin-top: 35px;
+	color:#fff;
+}
+
+.footerEwm_name{
+	text-align: center;
+	padding: 5px 0;
+	color: #bfcbc3;
+}

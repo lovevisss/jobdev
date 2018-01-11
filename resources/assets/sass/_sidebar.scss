@@ -1,0 +1,18 @@
+.sidebar{
+	background: #fff;
+	border-radius: 5px;
+	height: $list-height;
+    padding: 0 0;
+    li{
+	    padding-top: 20px;
+    	padding-left: 2px;
+
+    	a{
+    		
+    		&:hover img{
+    			@include transitions(0.5s);
+    			transform: translateX(3px);
+    		}
+    	}
+    }
+}
