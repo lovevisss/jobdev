@@ -1,10 +1,4 @@
-$orange : #A46105;
-$medium-blue: #0678be;
-$container-width:1200px;
-$list-height: 326px;
-$header-height:145px;
-$light-blue:#0680CB;
-$dark-blue:#0568A4;
+@import "variables";
 
 @mixin transitions($time){
 	transition:$time;
@@ -193,11 +187,11 @@ a{
 	text-align:center;
 }
 
-@media screen and (max-width:1200px){
-    body{
-    	width: 1200px;
-    }
-}
+// @media screen and (max-width:1200px){
+//     body{
+//     	width: 1200px;
+//     }
+// }
 
 @import "header";
 
@@ -208,6 +202,8 @@ a{
 @import "sidebar";
 
 @import "footer";
+
+
 
 
 

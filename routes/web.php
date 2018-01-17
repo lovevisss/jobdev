@@ -86,9 +86,20 @@ Route::get('/intro', ['as' => 'intro',function()
 {
 	return 'intro';
 }]);
-
+Route::get('login', ['as' =>'login', function(){
+	return \Redirect::route('company_entry');
+}]);
 Route::get('company_login', ['as' => 'company_entry', 'uses' => 'CompanyController@login']);
+Route::get('student_login', ['as' => 'student_entry', 'uses' => 'StudentController@login']);
+Route::get('company_register' , ['as' => 'company_register', 'uses' => 'CompanyController@register']);
+Route::post('post_company_register', ['as' => 'post_company_register', 'uses' => 'CompanyController@post_register']);
+Route::post('post_company_login', ['as' => 'post_company_login', 'uses' => 'CompanyController@post_login']);
+Route::get('company_index', ['as' => 'company_index', 'uses' => 'CompanyController@get_index', 'middleware' => 'auth']);
+Route::get('logout', ['as' => 'logout', 'uses' => 'CompanyController@logout']);
+Route::get('terms', ['as' => 'terms', function(){
+	return 'terms';
+}]);
 
-
+Route::get('edit_company', ['as' => 'edit_company', 'uses' => 'CompanyController@edit', 'middleware' => 'auth']);
 // Route::get('excel/export', 'ExcelController@export');
 // Route::get('excel/import', 'ExcelController@import');

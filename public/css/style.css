@@ -155,11 +155,6 @@ a:hover {
   text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
-  body {
-    width: 1200px;
-  }
-}
 .header_w {
   height: 145px;
   background: #0678be;
