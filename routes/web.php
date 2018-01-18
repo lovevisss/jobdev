@@ -32,6 +32,8 @@ Route::get('/about', ['as' => 'page.about', function()
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
+
+    Route::get('appointments', ['uses' => 'CompanyController@admin_appointment', 'as' => 'get_admin_appointment', 'middleware' => 'isAdmin']);
 });
 
 Route::get('/post/{id}', ['as' => 'post', function($id)
@@ -99,7 +101,10 @@ Route::get('logout', ['as' => 'logout', 'uses' => 'CompanyController@logout']);
 Route::get('terms', ['as' => 'terms', function(){
 	return 'terms';
 }]);
+Route::get('appointment_company',['as' => 'appointment_company', 'uses' => 'CompanyController@appoint', 'middleware' => 'auth']);
+Route::post('appointment_post',['as' => 'post_appointment', 'uses' => 'CompanyController@appoint_post', 'middleware' => 'auth']);
 
 Route::get('edit_company', ['as' => 'edit_company', 'uses' => 'CompanyController@edit', 'middleware' => 'auth']);
+Route::put('company_update', ['as' => 'company.update', 'uses' => 'CompanyController@update', 'middleware' => 'auth']);
 // Route::get('excel/export', 'ExcelController@export');
 // Route::get('excel/import', 'ExcelController@import');

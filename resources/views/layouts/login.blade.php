@@ -8,9 +8,11 @@
 	{{Html::style('css/normalize.css')}}
 	{{Html::style('css/style.css')}}
 	{{Html::style('css/company.css')}}
+	{{Html::style('css/datepicker.css')}}
 </head>
 <body>
 	@yield('body')
+	@include('partials._foot')
 </body>
 {{Html::script('js/jquery-1.11.1.min.js')}}
 	{{Html::script('js/main.js')}}

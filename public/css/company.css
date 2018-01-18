@@ -159,5 +159,57 @@
   color: #00b38a;
   text-align: center;
 }
+.company_mainarea .right_area {
+  padding-top: 66px;
+  padding-left: 80px;
+  min-height: 500px;
+}
+
+.article_main {
+  padding-bottom: 30px;
+}
+.article_main .toptab {
+  border-bottom: 1px solid #d4d5d7;
+  margin-top: 10px;
+  height: 58px;
+}
+.article_main .toptab a {
+  display: inline-block;
+}
+.article_main .toptab li {
+  float: left;
+  margin-right: 58px;
+  margin-top: -1px;
+  text-align: center;
+  padding: 0 2px;
+  height: 58px;
+  line-height: 59px;
+}
+.article_main .toptab .tabactive {
+  color: #00b38a;
+  border-bottom: 2px solid #00b38a;
+}
+.article_main .toptab .tabactive a {
+  color: #00b38a;
+}
+.article_main .toptab .left_wrap {
+  float: right;
+  text-align: right;
+  padding-top: 9px;
+}
+.article_main .toptab .wanna-build {
+  font-size: 14px;
+  background-color: #00b38a;
+  width: 84px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
 
 /*# sourceMappingURL=company.css.map */

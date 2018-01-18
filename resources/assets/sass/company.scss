@@ -179,5 +179,59 @@
 		color: $company-green;
 		text-align: center;
 	}
+	.right_area{
+    padding-top: 66px;
+    padding-left: 80px;
+    min-height: 500px;
+	}
 }
 
+
+
+.article_main {
+    padding-bottom: 30px;
+    .toptab{
+    	border-bottom: 1px solid #d4d5d7;
+	    margin-top: 10px;
+	    height: 58px;
+	    a{
+	    	display: inline-block;
+	    }
+	    li{
+	    	float: left;
+		    margin-right: 58px;
+		    margin-top: -1px;
+		    text-align: center;
+		    padding: 0 2px;
+		    height: 58px;
+		    line-height: 59px;
+	    }
+	    .tabactive{
+	    	color: $company-green;
+    		border-bottom: 2px solid $company-green;
+    		a{
+	    	color: $company-green;
+    		}
+	    }
+	    .left_wrap{
+	    	float: right;
+		    text-align: right;
+		    padding-top: 9px;
+	    }
+	    .wanna-build{
+    	    font-size: 14px;
+		    background-color: $company-green;
+		    width: 84px;
+		    height: 40px;
+		    line-height: 40px;
+		    color: #fff;
+		    text-align: center;
+		    margin-left: 20px;
+	    }
+    }
+}
+
+.input-group{
+
+    margin-bottom: 10px;
+}
